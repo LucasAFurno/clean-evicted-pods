@@ -1,0 +1,17 @@
+# Useful Bash Scripts for DevOps
+
+This repository contains two handy Bash scripts for Kubernetes maintenance and system backups.  
+Both scripts are ready to use and can be customized as needed.
+
+---
+
+## 1. clean-evicted-pods.sh
+Deletes all pods in `Evicted` state from **all** Kubernetes namespaces.
+
+### Usage:
+```bash
+chmod +x clean-evicted-pods.sh
+./clean-evicted-pods.sh
+Requirements:
+
+kubectl installed and configured with cluster access
